@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ai-chatbot">AI Chatbot</a></li>
+            <li><a href="#power-bi-dashboard">Power BI Dashboard</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Welcome to Interactive Website</h1>
+            <p>This website offers an AI chatbot for document summarization and a Power BI dashboard integration.</p>
+            <p>Our AI chatbot can help you quickly summarize documents and provide insights.</p>
+            <a href="#ai-chatbot" class="btn">Try AI Chatbot</a>
+            <p>Explore the Power BI dashboard to gain valuable insights from your data.</p>
+        </div>
+    </section>
+
+    <!-- AI Chatbot Page -->
+    <section id="ai-chatbot" class="section">
+        <div class="container">
+            <h2>AI Chatbot</h2>
+            <p>Interact with our AI chatbot to get document summaries and insights.</p>
+            <p>Use the search bar below to query the AI for document summaries.</p>
+            <!-- Search bar -->
+            <input type="text" id="searchBar" placeholder="Enter your query...">
+            <button id="searchButton" class="btn">Search</button>
+            <!-- Example queries and results -->
+            <div id="exampleQueries">
+                <h3>Example Queries:</h3>
+                <ul>
+                    <li>Query 1</li>
+                    <li>Query 2</li>
+                    <li>Query 3</li>
+                </ul>
+            </div>
+            <div id="results">
+                <!-- Results will be dynamically populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Power BI Dashboard Page -->
+    <section id="power-bi-dashboard" class="section">
+        <div class="container">
+            <h2>Power BI Dashboard</h2>
+            <p>Navigate and interact with our Power BI clickable dashboard.</p>
+            <p>Gain insights and visualize your data in real-time.</p>
+            <!-- Embedded Power BI dashboard -->
+            <div id="powerBiDashboard">
+                <!-- Power BI dashboard will be embedded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Reach out to us!</p>
+            <!-- Contact form -->
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Learn more about the creators of this website.</p>
+            <p>We are passionate about providing innovative solutions to our users.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Interactive Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Script to handle AI chatbot functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
